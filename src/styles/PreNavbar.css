@@ -1,0 +1,16 @@
+.preNav {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  align-items: center;
+  padding: 0.5%;
+}
+
+.preNav_div_1 {
+  margin-left: 10%;
+}
+
+a {
+  color: rgb(68, 3, 25);
+  text-decoration: none;
+}
