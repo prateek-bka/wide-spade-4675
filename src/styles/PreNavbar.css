@@ -32,3 +32,42 @@ a {
 .preNav_div_2 :hover {
   color: brown;
 }
+
+.post_preNav {
+  margin-left: 5%;
+
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 5%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+img {
+  width: 60px;
+}
+
+.post_preNav {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2%;
+}
+
+.searchbox {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+
+input {
+  padding: 2%;
+  width: 150%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(244, 244, 244);
+  border: none;
+  margin-left: -5%;
+}
