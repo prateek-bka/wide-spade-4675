@@ -62,8 +62,10 @@ const Prenavbar = () => {
     <div>
       <div className="preNav">
         <div className="preNav_div_1">
-          {giftCard}
-          <p>Pick Any Product at Rs 199</p>
+          <div>{giftCard}</div>
+          <div>
+            <p>Pick Any Product at Rs 199</p>
+          </div>
         </div>
 
         <div className="preNav_div_2">
