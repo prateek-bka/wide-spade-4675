@@ -11,3 +11,8 @@
   text-decoration: none;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
+.navlinks:hover {
+  text-decoration: none;
+  color: rgb(118, 44, 57);
+}
