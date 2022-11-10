@@ -1,16 +1,16 @@
 .preNav {
   background-color: rgb(255, 205, 213);
+  place-items: center;
   display: grid;
-  grid-template-columns: 2fr 5fr 1fr;
-  align-items: center;
-  padding: 0.5%;
+  grid-template-columns: 3fr 2fr 3fr;
 }
 
 .preNav_div_1 {
-  margin-left: 10%;
   display: flex;
   align-items: center;
-  gap: 2%;
+  justify-content: center;
+  gap: 1%;
+  width: 90%;
 }
 
 a {
@@ -21,7 +21,9 @@ a {
 .preNav_div_3 {
   display: flex;
   align-items: center;
-  gap: 2%;
+  justify-content: center;
+  gap: 1%;
+  width: 90%;
 }
 
 .preNav_div_1,
@@ -35,10 +37,7 @@ a {
 
 .post_preNav {
   margin-left: 5%;
-
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   gap: 5%;
 }
 

@@ -41,12 +41,6 @@ const Slider = () => {
           />
         </Carousel.Item>
       </Carousel>
-      <div className="">
-        <img
-          src="https://files.myglamm.com/site-images/original/ULt2240x614.jpg"
-          alt=""
-        />
-      </div>
     </>
   );
 };
