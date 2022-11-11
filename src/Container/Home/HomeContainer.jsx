@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../Components/Footer";
 
 import Slider from "../../Components/Slider";
 import SpotlightHome from "../../Components/SpotlightHome";
@@ -8,6 +9,7 @@ const HomeContainer = () => {
     <>
       <Slider />
       <SpotlightHome />
+      {/* <Footer /> */}
     </>
   );
 };
