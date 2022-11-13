@@ -17,3 +17,10 @@
 .mini_footer_div img {
   width: 60%;
 }
+
+.mini_footer_div :hover {
+  text-decoration: none;
+  color: rgb(43, 5, 12);
+  font-size: larger;
+  cursor: pointer;
+}
