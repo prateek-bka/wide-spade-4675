@@ -11,11 +11,14 @@ const Navbar = () => {
       <Link to={"/products"} className="navlinks">
         PRODUCTS
       </Link>
-      <Link to={"/hair"} className="navlinks">
-        HAIR CARE
-      </Link>
       <Link to={"/skin"} className="navlinks">
         SKIN CARE
+      </Link>
+      <Link to={"/rewards"} className="navlinks">
+        REWARDS
+      </Link>
+      <Link to={"/hair"} className="navlinks">
+        HAIR CARE
       </Link>
       <Link to={"/care"} className="navlinks">
         SANITIZING CARE
@@ -23,9 +26,7 @@ const Navbar = () => {
       <Link to={"/collection"} className="navlinks">
         COLLECTION
       </Link>
-      <Link to={"/rewards"} className="navlinks">
-        REWARDS
-      </Link>
+
       <Link to={"/studio"} className="navlinks">
         MYGLAMY STUDIO
       </Link>

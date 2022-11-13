@@ -18,7 +18,6 @@ const HomeContainer = () => {
       <br />
       <br />
       <br />
-      <Footer />
     </>
   );
 };

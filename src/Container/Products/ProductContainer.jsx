@@ -5,6 +5,18 @@ const ProductContainer = () => {
   return (
     <div>
       <Products />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
