@@ -9,7 +9,16 @@ const HomeContainer = () => {
     <>
       <Slider />
       <SpotlightHome />
-      {/* <Footer /> */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Footer />
     </>
   );
 };

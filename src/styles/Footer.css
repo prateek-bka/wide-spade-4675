@@ -1,0 +1,19 @@
+.main_footer_container {
+  display: flex;
+
+  margin: auto;
+  padding: 1%;
+}
+
+.mini_footer_div {
+  width: 80%;
+}
+
+.mini_footer_div input {
+  width: 60%;
+  margin: auto;
+}
+
+.mini_footer_div img {
+  width: 60%;
+}
