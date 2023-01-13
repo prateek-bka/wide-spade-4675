@@ -1,15 +1,35 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "../styles/Products.css";
+// import jsonData from "../../data.json";
+
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Text,
+  Image,
+  Stack,
+  Heading,
+  Divider,
+  Button,
+  ButtonGroup,
+} from "@chakra-ui/react";
 
 const Products = () => {
   const [data, setData] = useState([]);
+  // const [jsonData, setJsonData] = useState([]);
+  const myStyles = {
+    display: "grid",
+    gridTemplateColumns: "repeat(3,1fr)",
+    margin: "2%",
+  };
 
   async function getData() {
     axios
       .get(
-        "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation"
+        "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=blush"
       )
       .then((response) => {
         console.log(response.data);
@@ -19,26 +39,35 @@ const Products = () => {
 
   useEffect(() => {
     getData();
-    console.log("data_fetched", data);
   }, []);
 
   return (
-    <div>
-      <div className="productCardList">
+    <>
+      <div style={myStyles}>
         {data.map((e) => (
-          <div key={e.id}>
-            <div className="card_container">
-              <img src={e.image_link} alt="" />
-              <h5>{e.name}</h5>
-              <div>
-                <p>{`Rs ${e.price}`}</p>
-                <button>Add to Cart</button>
-              </div>
-            </div>
-          </div>
+          <Card maxW="sm" m={1} p={1}>
+            <CardBody>
+              <Image src={e.image_link} alt={e.name} w={"full"}></Image>
+              <Stack mt="6" spacing="3">
+                <Heading size="md">{e.name}</Heading>
+                <Text color={"blue.600"}>{`USD ${e.price}`}</Text>
+              </Stack>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup>
+                  <Button variant="solid" colorScheme="blue">
+                    Buy now
+                  </Button>
+                  <Button variant="ghost" colorScheme="blue">
+                    Add to cart
+                  </Button>
+                </ButtonGroup>
+              </CardFooter>
+            </CardBody>
+          </Card>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeContainer from "../Container/Home/HomeContainer";
 import ProductContainer from "../Container/Products/ProductContainer";
-
 import Navbar from "../Components/Navbar";
 import PreNavbar from "../Components/PreNavbar";
 import Footer from "../Components/Footer";
